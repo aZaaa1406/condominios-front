@@ -28,6 +28,7 @@ type LoginType = z.infer<typeof loginSchema>
 
 
 function LoginForm() {
+  console.log(URL_API);
 
   const router = useRouter()
 
