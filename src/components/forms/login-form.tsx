@@ -46,6 +46,7 @@ function LoginForm() {
         headers: { "Content-Type": "application/json" },
         withCredentials: true
       })
+      console.log(data);
       if (data.status === 200) {
         toast.success("Inicio de sesión exitoso")
         console.log("respuesta del servidor", data.status, data.rol);
